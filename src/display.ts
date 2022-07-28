@@ -11,7 +11,7 @@ export const display = {
       });
     },
     off(): void {
-      const child = spawn('pmset', ['displaysleepnow']);
+      const child = spawn('sudo', ['pmset', 'displaysleepnow']);
       child.on('close', () => {
         console.log('pmset done');
       });

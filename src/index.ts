@@ -30,10 +30,14 @@ server.on('connection', (conn) => {
       audio.headphones.mute();
     } else if (message === 'audio.headphones.unmute') {
       audio.headphones.unmute();
+    } else if (message === 'audio.headphones.switch') {
+      audio.headphones.switchTo();
     } else if (message === 'audio.deskspeakers.mute') {
       audio.deskspeakers.mute();
     } else if (message === 'audio.deskspeakers.unmute') {
       audio.deskspeakers.unmute();
+    } else if (message === 'audio.deskspeakers.switch') {
+      audio.deskspeakers.switchTo();
     } else if (message === 'lights.power.on') {
       lights.power.on();
     } else if (message === 'lights.power.off') {

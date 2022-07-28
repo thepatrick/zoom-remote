@@ -24,6 +24,9 @@ export const audio = {
     async unmute(): Promise<void> {
       await pushButton(6, 9);
     },
+    async switchTo(): Promise<void> {
+      await pushButton(6, 11);
+    },
   },
   deskspeakers: {
     async mute(): Promise<void> {
@@ -31,6 +34,9 @@ export const audio = {
     },
     async unmute(): Promise<void> {
       await pushButton(6, 1);
+    },
+    async switchTo(): Promise<void> {
+      await pushButton(6, 3);
     },
   },
 };
