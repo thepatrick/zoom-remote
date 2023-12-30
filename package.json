@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@types/bonjour": "^3.5.9",
-    "axios": "^1.0.0",
+    "axios": "^1.6.0",
     "bonjour": "^3.5.0"
   }
 }
